@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fw0-0f-z6A">
+                                <rect key="frame" x="240" y="322" width="120" height="42"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.42736114391882463" blue="0.30505762382349133" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="正确"/>
+                                <connections>
+                                    <action selector="success:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tDF-6a-9UZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9EN-xq-FVi">
+                                <rect key="frame" x="240" y="384" width="120" height="42"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.42736114390000002" blue="0.30505762380000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="错误"/>
+                                <connections>
+                                    <action selector="error:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XyK-g7-sKU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cgy-On-hUB">
+                                <rect key="frame" x="240" y="446" width="120" height="42"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.42736114390000002" blue="0.30505762380000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="aHY-cI-CB6"/>
+                                    <constraint firstAttribute="height" constant="42" id="b3g-ha-vRU"/>
+                                </constraints>
+                                <state key="normal" title="加载"/>
+                                <connections>
+                                    <action selector="loading:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kAt-Wg-F4Y"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6MX-Hn-HHu">
+                                <rect key="frame" x="240" y="508" width="120" height="42"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.42736114390000002" blue="0.30505762380000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="隐藏"/>
+                                <connections>
+                                    <action selector="hide:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ODp-bG-QH0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6hU-zw-aoC" userLabel="文字">
+                                <rect key="frame" x="240" y="260" width="120" height="42"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.42736114390000002" blue="0.30505762380000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="文字"/>
+                                <connections>
+                                    <action selector="message:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aBj-eh-Icp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cgy-On-hUB" firstAttribute="top" secondItem="9EN-xq-FVi" secondAttribute="bottom" constant="20" id="6DS-x0-add"/>
+                            <constraint firstItem="cgy-On-hUB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="72S-1Q-a7d"/>
+                            <constraint firstItem="cgy-On-hUB" firstAttribute="height" secondItem="Fw0-0f-z6A" secondAttribute="height" id="E6I-km-czk"/>
+                            <constraint firstItem="Fw0-0f-z6A" firstAttribute="width" secondItem="6hU-zw-aoC" secondAttribute="width" id="I8t-TA-gNz"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6MX-Hn-HHu" secondAttribute="bottom" constant="50" id="QDV-CW-4Cx"/>
+                            <constraint firstItem="Fw0-0f-z6A" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="THK-8m-1Od"/>
+                            <constraint firstItem="9EN-xq-FVi" firstAttribute="height" secondItem="Fw0-0f-z6A" secondAttribute="height" id="TWx-kM-pPr"/>
+                            <constraint firstItem="9EN-xq-FVi" firstAttribute="width" secondItem="Fw0-0f-z6A" secondAttribute="width" id="Zg8-WZ-WF9"/>
+                            <constraint firstItem="9EN-xq-FVi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gEK-Bc-ep4"/>
+                            <constraint firstItem="6MX-Hn-HHu" firstAttribute="top" secondItem="cgy-On-hUB" secondAttribute="bottom" constant="20" id="gr6-Gk-SRR"/>
+                            <constraint firstItem="6MX-Hn-HHu" firstAttribute="height" secondItem="Fw0-0f-z6A" secondAttribute="height" id="hTq-qa-PMF"/>
+                            <constraint firstItem="6hU-zw-aoC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hg3-KA-nNB"/>
+                            <constraint firstItem="9EN-xq-FVi" firstAttribute="top" secondItem="Fw0-0f-z6A" secondAttribute="bottom" constant="20" id="iYX-nM-OXb"/>
+                            <constraint firstItem="Fw0-0f-z6A" firstAttribute="height" secondItem="6hU-zw-aoC" secondAttribute="height" id="igx-wY-Y1c"/>
+                            <constraint firstItem="cgy-On-hUB" firstAttribute="width" secondItem="Fw0-0f-z6A" secondAttribute="width" id="oMu-2V-DUC"/>
+                            <constraint firstItem="6MX-Hn-HHu" firstAttribute="width" secondItem="Fw0-0f-z6A" secondAttribute="width" id="sVl-BS-EDl"/>
+                            <constraint firstItem="Fw0-0f-z6A" firstAttribute="top" secondItem="6hU-zw-aoC" secondAttribute="bottom" constant="20" id="svT-HN-6HK"/>
+                            <constraint firstItem="6MX-Hn-HHu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yBY-fo-TwV"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="323" y="289"/>
+        </scene>
+    </scenes>
+</document>
